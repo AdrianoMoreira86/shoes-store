@@ -1,63 +1,72 @@
 * {
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
+  }
+  
+  body {
     font-family: "Open Sans", sans-serif;
-}
-
-.container {
-    width: 100%;
+    margin: 0;
+  }
+  
+  .container {
     max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
-}
-
-header {
+  }
+  
+  header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-}
-
-
-
-.nav-link {
+  }
+  
+  nav {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
     color: #777;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    padding-right: 20px;
-}
-
-.banner {
+    padding-left: 16px;
+  }
+  
+  .banner {
     background-image: url("../img/banner.png");
     height: 235px;
-}
-
-
-section.estilos h2 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 82px;
-    text-align: center;
-}
-
-.wrapper {
+  }
+  
+  .contact-heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: #575757;
+  }
+  
+  .contato {
     display: flex;
-    margin: auto;
-    justify-content: space-between;
-    padding: 82px 113px;
-    
-}
-
-@media(max-width:720px){
-    .container{
-        max-width: 720px;
-    }
-    .wrapper{
-        
-        display: block;
-    }
-}
+  }
+  
+  form,
+  article {
+    flex: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    color: #9b9b9b;
+  }
+  
+  input,
+  select {
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: solid 1px #9b9b9b;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
